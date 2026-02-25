@@ -35,6 +35,7 @@
 
 <p align="center">
   <img src="screenshots/task3-curl-inside.png" alt="Проверка внутри контейнера. Проверка с хоста" width="750"/>
+   <img src="screenshots/task3-edit-config2.png alt="Проверка внутри контейнера. Проверка с хоста" width="750"/>
   <br>
   <em>Рисунок 4 - Проверка curl внутри контейнера (80 не работает, 81 работает). Проверка с хостовой машины (не работает)</em>
   <em>Проблема: curl 80 не работает, Nginx внутри слушает порт 81, но Docker при запуске контейнера пробросил хост-порт 8080 на контейнер-порт 80 (так было в команде run). Теперь внутри контейнера порт 80 не слушается, поэтому внешний запрос падает в пустоту.</em>
@@ -89,13 +90,13 @@
 <p align="center">
   <img src="screenshots/task5-portainer-inspect.png" alt="Inspect в Portainer" width="1000"/>
   <br>
-  <em>Рисунок 22 - Просмотр Config контейнера (AppArmorProfile до Driver)</em>
+  <em>Рисунок 10 - Просмотр Config контейнера (AppArmorProfile до Driver)</em>
 </p>
 
 <p align="center">
   <img src="screenshots/task5-warning.png" alt="Warning" width="800"/>
   <br>
-  <em>Рисунок 23 - Предупреждение об отсутствующем файле. Остановка проекта одной командой docker compose down</em>
+  <em>Рисунок 11 - Предупреждение об отсутствующем файле. Остановка проекта одной командой docker compose down</em>
   <em>В compose.yaml есть директива include, которая ссылается на несуществующий файл docker-compose.yaml. Docker Compose предупреждает, что этот файл не найден и будет проигнорирован.</em>
 </p>
 
